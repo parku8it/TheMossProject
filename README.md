@@ -4,6 +4,6 @@ The Moss Project (short for Mountable Organised Secure Storage; And Open Source 
 # Current progress
 !!! Worth noting, The windows driver module is mostly AI generated. I will make sure the implementation is functional as intended, but I cannot guarantee there wont be bugs.
 
-Functional on linux, being ported to linux for the time being. Have a partially working windows implementation, I estimate the windows shipping wil be done in a day.
+Functional on linux, being ported to windows for the time being. Have a partially working windows implementation, I estimate the windows shipping wil be done in a day.
 
 When both these are done, the project will officially be released to the public, with precompoled binaries in releases.
