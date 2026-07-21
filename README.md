@@ -16,7 +16,7 @@ Also more features, I have one in mind but not sure how to execute it for now an
 Moss is written in rust and currently only works in cli. as of now, it features attaching files for mounting, inspecting file payload using tui built with ratatui and creating empty .moss files
 
 # How to use 
-For Windows:
+# For Windows:
   Attaching moss to drive letter:
   ```bat
   \path\to\moss.exe attach \path\to\file.moss {Drive Letter}:
@@ -25,7 +25,7 @@ For Windows:
   ```bat
   moss.exe attach file.moss Z:
   ```
-
+\
 
   Creating moss in folder:
   ```bat
@@ -35,7 +35,7 @@ For Windows:
   ```bat
   moss.exe create file.moss
   ```
-
+\
 
   Inspecting moss:
   ```bat
@@ -45,7 +45,7 @@ For Windows:
   ```bat
   moss.exe inspect file.moss
   ```
-
+\
 
   Cleaning dead data from moss:
   ```bat
@@ -55,9 +55,9 @@ For Windows:
   ```bat
   moss.exe clean file.moss
   ```
+\
 
-
-For Linux:
+# For Linux:
   Attaching moss to folder:
   ```bat
   \path\to\moss attach \path\to\file.moss \path\to\folder
@@ -66,7 +66,7 @@ For Linux:
   ```bat
   moss attach file.moss ./mnt
   ```
-
+\
 
   Creating moss in folder:
   ```bat
@@ -76,7 +76,7 @@ For Linux:
   ```bat
   moss create file.moss
   ```
-
+\
 
   Inspecting moss:
   ```bat
@@ -86,7 +86,7 @@ For Linux:
   ```bat
   moss inspect file.moss
   ```
-
+\
 
   Cleaning dead data from moss:
   ```bat
