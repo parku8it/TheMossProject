@@ -23,6 +23,8 @@ No current plans to ship to this even though I have an ipad. I dont own a macboo
 Moss is written in rust and currently only works in cli. as of now, it features attaching files for mounting, inspecting file payload using tui built with ratatui and creating empty .moss files
 
 # How to use 
+!!!BIG BIG NOTE (yes, again)!!!; Moss files are append only, so files you delete in a moss will just be unlinked, but still stay in the file. Over time this can accumulate and make the file much much bigger than it needs to be. To make your moss big again, just use the clean feature. Personally, it cleaned up to 9GBs of dead data in a few seconds, so its pretty good.
+
 ## For Windows:
   Attaching moss to drive letter:
   ```bat
@@ -67,7 +69,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 ## For Linux:
   Attaching moss to folder:
   ```bat
-  \path\to\moss attach \path\to\file.moss \path\to\folder
+  /path/to/moss attach /path/to/file.moss /path/to/folder
   ```
   For example when cmd is open in same folder as exe and moss and you want to attach to a child folder named mnt:
   ```bat
@@ -77,7 +79,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 
   Creating moss in folder:
   ```bat
-  \path\to\moss create \desired\path\for\file.moss
+  /path/to/moss create /desired/path/for/file.moss
   ```
   For example when cmd is open in same folder as exe and you want to create moss there, replace file.moss with the name you want:
   ```bat
@@ -87,7 +89,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 
   Inspecting moss:
   ```bat
-  \path\to\moss inspect \path\to\file.moss
+  /path/to/moss inspect /path/to/file.moss
   ```
   For example when cmd is open in same folder as exe and moss:
   ```bat
@@ -97,7 +99,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 
   Cleaning dead data from moss:
   ```bat
-  \path\to\moss clean \path\to\file.moss
+  /path/to/moss clean /path/to/file.moss
   ```
   For example when cmd is open in same folder as exe and moss:
   ```bat
@@ -140,7 +142,7 @@ also get Dokan installed on your system to mount moss files on windows; get it f
 Then
 
 ```bat
-git clone git clone https://github.com/parku8it/TheMossProject.git
+git clone https://github.com/parku8it/TheMossProject.git
 cd moss
 cargo build --release
 ```
@@ -156,5 +158,6 @@ I provide builds for both windows and linux, both for arm and x64. I may or may 
 
 # Versioning
 The program also increases version every build, so I can know if I uploaded the right version here or for my friends.
+I did this using with the build.rs in project root.
 
 # Free to use btw do WHATEVER with it i dont care
