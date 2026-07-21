@@ -25,6 +25,8 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 # How to use 
 !!!BIG BIG NOTE (yes, again)!!!; Moss files are append only, so files you delete in a moss will just be unlinked, but still stay in the file. Over time this can accumulate and make the file much much bigger than it needs to be. To make your moss big again, just use the clean feature. Personally, it cleaned up to 9GBs of dead data in a few seconds, so its pretty good.
 
+ANOTHER IMPORTANT NOTE!!! get Dokan installed on your system to mount moss files on windows; get it from https://github.com/dokan-dev/dokany/releases (install the x64 or arm64 msi depending on your system, or also just get the dokan setup.exe)
+
 ## For Windows:
   Attaching moss to drive letter:
   ```bat
