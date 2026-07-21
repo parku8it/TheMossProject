@@ -16,7 +16,7 @@ Also more features, I have one in mind but not sure how to execute it for now an
 Moss is written in rust and currently only works in cli. as of now, it features attaching files for mounting, inspecting file payload using tui built with ratatui and creating empty .moss files
 
 # How to use 
-# For Windows:
+## For Windows:
   Attaching moss to drive letter:
   ```bat
   \path\to\moss.exe attach \path\to\file.moss {Drive Letter}:
@@ -57,7 +57,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
   ```
 \
 
-# For Linux:
+## For Linux:
   Attaching moss to folder:
   ```bat
   \path\to\moss attach \path\to\file.moss \path\to\folder
