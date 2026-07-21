@@ -26,6 +26,7 @@ For Windows:
   moss.exe attach file.moss Z:
   ```
 
+
   Creating moss in folder:
   ```bat
   \path\to\moss.exe create \desired\path\for\file.moss
@@ -34,6 +35,7 @@ For Windows:
   ```bat
   moss.exe create file.moss
   ```
+
 
   Inspecting moss:
   ```bat
@@ -44,6 +46,7 @@ For Windows:
   moss.exe inspect file.moss
   ```
 
+
   Cleaning dead data from moss:
   ```bat
   \path\to\moss.exe clean \path\to\file.moss
@@ -52,5 +55,47 @@ For Windows:
   ```bat
   moss.exe clean file.moss
   ```
+
+
+For Linux:
+  Attaching moss to folder:
+  ```bat
+  \path\to\moss attach \path\to\file.moss \path\to\folder
+  ```
+  For example when cmd is open in same folder as exe and moss and you want to attach to a child folder named mnt:
+  ```bat
+  moss attach file.moss ./mnt
+  ```
+
+
+  Creating moss in folder:
+  ```bat
+  \path\to\moss create \desired\path\for\file.moss
+  ```
+  For example when cmd is open in same folder as exe and you want to create moss there, replace file.moss with the name you want:
+  ```bat
+  moss create file.moss
+  ```
+
+
+  Inspecting moss:
+  ```bat
+  \path\to\moss inspect \path\to\file.moss
+  ```
+  For example when cmd is open in same folder as exe and moss:
+  ```bat
+  moss inspect file.moss
+  ```
+
+
+  Cleaning dead data from moss:
+  ```bat
+  \path\to\moss clean \path\to\file.moss
+  ```
+  For example when cmd is open in same folder as exe and moss:
+  ```bat
+  moss clean file.moss
+  ```
+
 
 # Free to use btw do WHATEVER with it i dont care
