@@ -97,5 +97,57 @@ Moss is written in rust and currently only works in cli. as of now, it features 
   moss clean file.moss
   ```
 
+# Building from source
+
+## For Linux:
+
+First get rust. You can use packages like rust from the Arch official repo but I suggest rustup because it will let you cross compile in case you need it; Install it from https://rustup.rs if you dont have it.
+
+```bash
+git clone https://github.com/parku8it/TheMossProject.git
+cd moss
+cargo build --release
+```
+
+If it compiles successfully, u can find the bin at `target/release/moss`
+
+If you get fuse errors, you probably need libfuse or fuse3 installed:
+
+```bash
+# Debian/Ubuntu
+sudo apt install fuse3 libfuse3-dev
+
+# Fedora
+sudo dnf install fuse3 fuse3-devel
+
+# Arch
+sudo pacman -S fuse3
+```
+
+## For Windows:
+
+get rust from https://rustup.rs. (NOT chocolatey, that one sucks lol and) because we need the msvc toolchain which rustup should set up automatically.
+
+also get Dokan installed on your system to mount moss files on windows; get it from https://github.com/dokan-dev/dokany/releases (install the x64 or arm64 msi depending on your system, or also just get the dokan setup.exe).
+
+Then
+
+```bat
+git clone git clone https://github.com/parku8it/TheMossProject.git
+cd moss
+cargo build --release
+```
+
+The bin will be at `target\release\moss.exe` just like linux
+
+If cargo complains about linker stuff, install Visual Studio Build Tools or just use the "Desktop development with C++" thing from Visual Studio Installer. Dont get gnueabi even if ai tells u to, just use msvc. I dont think dokany works on gnu.
+Or better, just use the builds I provide in releases if you're not using a custom version.
+
+## Pre-built binaries
+
+I provide builds for both windows and linux, both for arm and x64. I may or may not provide for android if i ever end up finishing an android version.
+
+# Versioning
+The program also increases version every build, so I can know if I uploaded the right version here or for my friends.
 
 # Free to use btw do WHATEVER with it i dont care
