@@ -17,7 +17,7 @@ Moss is written in rust and currently only works in cli. as of now, it features 
 
 # How to use 
 For Windows:
-  #Attaching moss to drive letter:
+  Attaching moss to drive letter:
   ```bat
   \path\to\moss.exe attach \path\to\file.moss {Drive Letter}:
   ```
@@ -26,7 +26,7 @@ For Windows:
   moss.exe attach file.moss Z:
   ```
 
-  #Creating moss in folder:
+  Creating moss in folder:
   ```bat
   \path\to\moss.exe create \desired\path\for\file.moss
   ```
@@ -35,7 +35,7 @@ For Windows:
   moss.exe create file.moss
   ```
 
-  #Inspecting moss:
+  Inspecting moss:
   ```bat
   \path\to\moss.exe inspect \path\to\file.moss
   ```
@@ -44,7 +44,7 @@ For Windows:
   moss.exe inspect file.moss
   ```
 
-  #Cleaning dead data from moss:
+  Cleaning dead data from moss:
   ```bat
   \path\to\moss.exe clean \path\to\file.moss
   ```
