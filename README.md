@@ -9,8 +9,15 @@ The Moss Project (short for Mountable Organised Secure Storage; And Open Source 
 Both linux and windows builds are now functioning as intended!
 Currently, you can only use cli commands or tui to use the program. Feel free to use the code to create your own versions of the program.
 
+# Goals
 I plan to add a native ui using egui or flutter or something.
 Also more features, I have one in mind but not sure how to execute it for now and its a bit complex
+
+## Android
+I am considering expanding support to android, but I cannot promise it will ever go out to the public. If you need it that bad, just use termux with file storage command and rust compilation packages then build a binary using `cargo build` with optional `--release` tag, find the bin in target/debug or target/release. on the first ever run, it took my old phone only a few minutes. other builds will generally only take a few dozen seconds if you didnt mess with dependencies.
+
+## MacOS/OSX, iOS, iPadOS
+No current plans to ship to this even though I have an ipad. I dont own a macbook and am not planning to hackintosh any time soon (my mind may change, I've done hackintosh before and still have an EFI folder ready. I just dont need it, yet.)
 
 # More on Moss
 Moss is written in rust and currently only works in cli. as of now, it features attaching files for mounting, inspecting file payload using tui built with ratatui and creating empty .moss files
